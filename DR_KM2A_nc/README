@@ -1,0 +1,10 @@
+0.  km2aEthetad.cc   生成投点分布文件
+1.  Tobs_transit     计算每个DEC的源 1 transit的观测时间
+2.  data/zenc.root   提供了每个dec处源的1 transit 的观测时间
+3.  rec.cc           如果换了新的模拟数据，需要根据新的模拟数据Makefile重新产生对应的TTree.h .cc 文件
+4.  response         提供模拟数据产生 DR
+
+Cut条件在 dataCut里修改
+PSF在rec.cc里改
+改完后make
+response.sh: ./response InputMCFile OutputResponseFile 
